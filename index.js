@@ -4,7 +4,7 @@ const app = express()
 let dateNow = new Date()
 let year = dateNow.getFullYear()
 let day = dateNow.getDate()
-let monthYear = ['Enero', 'Febrero', 'Marzo', 'Abri', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+let monthYear = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 
 app.get('/what-date', function (req, res) {
     res.send(`Fecha Actual: ${day} de ${monthYear[dateNow.getMonth()]} del ${year}`)
