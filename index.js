@@ -18,5 +18,7 @@ app.get('/what-date-time', function (req, res) {
     res.send(`Fecha y Horario Actual: ${day} de ${monthYear[dateNow.getMonth()]} del ${year} - ${dateNow.toLocaleTimeString()}`)
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log('Aplicacion levantanda con exito en el puerto 3000')
+})
 
